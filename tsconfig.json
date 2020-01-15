@@ -19,8 +19,8 @@
       "dom"
     ],
     "paths": {
-      "my-lib": [
-        "dist/my-lib"
+      "components": [
+        "dist"
       ]
     }
   },
