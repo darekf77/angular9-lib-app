@@ -1,6 +1,6 @@
-TODO to compile with 
+TODO to enable lazy loading in library
 
-## 1. thing
+
 /node_modules/ng-packagr/lib/flatten/rollup.js
 
 ```
