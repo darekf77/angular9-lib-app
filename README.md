@@ -1,27 +1,21 @@
-# MyNiceLib
+TODO to compile with 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.7.
+## 1. thing
+/node_modules/ng-packagr/lib/flatten/rollup.js
 
-## Development server
+```
+ const bundle = yield rollup.rollup({
+            context: 'this',
+            external: moduleId => externalModuleIdStrategy.isExternalDependency(moduleId),
+            inlineDynamicImports: true,  // required change
+```
+node_modules/ng-packagr/lib/ng-package/entry-point/write-bundles.transform.js
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 2. thing
+comment this code
 
-## Code scaffolding
+```
+// log.info('Bundling to UMD');
+// yield flatten_1.flattenToUmd(Object.assign(Object.assign({}, opts), { entryFile: fesm5, destFile: umd, dependencyList: opts.dependencyList }));
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```

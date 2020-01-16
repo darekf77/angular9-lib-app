@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { Route1Component } from './route1.component';
 import { Routes, RouterModule } from '@angular/router';
 
+console.log('dynamic route!')
+// alert('loaded async')
+
 @NgModule({
   imports: [
     CommonModule,
